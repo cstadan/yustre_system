@@ -14,7 +14,7 @@ $user_rol  = $_SESSION['user_rol']  ?? 'clinic';
     <title>Calves Registry</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../../../assets/css/style_dashboard_clinic.css">
+    <link rel="stylesheet" href="../../../assets/css/style_green_theme.css">
     <link rel="stylesheet" href="../../../assets/css/style_calves_clinic.css">
 </head>
 <body class="clinic-module">
@@ -158,7 +158,7 @@ $user_rol  = $_SESSION['user_rol']  ?? 'clinic';
         const mainContent = document.getElementById('mainContent');
         const overlay     = document.getElementById('sidebarOverlay');
         const toggleBtn   = document.getElementById('sidebarToggleBtn');
-        const SIDEBAR_W=270, COLLAPSED_W=72;
+        const SIDEBAR_W=250, COLLAPSED_W=68;
 
         function updateToggleBtn(c) {
             if (window.innerWidth > 768) {

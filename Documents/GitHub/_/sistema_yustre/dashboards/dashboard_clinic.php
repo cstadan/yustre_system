@@ -18,7 +18,11 @@ $user_rol  = $_SESSION['user_rol']  ?? 'clinic';
     <title>Dashboard — Clinic</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../assets/css/style_dashboard_clinic.css">
+    <link rel="stylesheet" href="../assets/css/style_green_theme.css">
+    <style>
+        .nav-icon { color: #4dd68a; }
+        .nav-link.logout .nav-icon { color: rgba(255, 255, 255, 0.65); }
+    </style>
 </head>
 <body class="clinic-module">
 
@@ -107,7 +111,7 @@ $user_rol  = $_SESSION['user_rol']  ?? 'clinic';
         <div class="dashboard-card-large">
             <div class="card-header-custom">
                 <h3 class="card-title">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="none" style="vertical-align:middle;margin-right:8px"><rect x="3" y="4" width="18" height="18" rx="2" stroke="#f5e6c8" stroke-width="1.8"/><path d="M16 2v4M8 2v4M3 10h18" stroke="#f5e6c8" stroke-width="1.8" stroke-linecap="round"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="none" style="vertical-align:middle;margin-right:8px"><rect x="3" y="4" width="18" height="18" rx="2" stroke="#fff" stroke-width="1.8"/><path d="M16 2v4M8 2v4M3 10h18" stroke="#fff" stroke-width="1.8" stroke-linecap="round"/></svg>
                     Activity Calendar
                 </h3>
             </div>
@@ -118,7 +122,7 @@ $user_rol  = $_SESSION['user_rol']  ?? 'clinic';
         <div class="dashboard-card-large">
             <div class="card-header-custom alerts-header">
                 <h3 class="card-title">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="none" style="vertical-align:middle;margin-right:8px"><path d="M12 2a7 7 0 017 7c0 3.87-1.5 6-3 8H8c-1.5-2-3-4.13-3-8a7 7 0 017-7z" stroke="#f5e6c8" stroke-width="1.8"/><path d="M9 19a3 3 0 006 0" stroke="#f5e6c8" stroke-width="1.8" stroke-linecap="round"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="none" style="vertical-align:middle;margin-right:8px"><path d="M12 2a7 7 0 017 7c0 3.87-1.5 6-3 8H8c-1.5-2-3-4.13-3-8a7 7 0 017-7z" stroke="#fff" stroke-width="1.8"/><path d="M9 19a3 3 0 006 0" stroke="#fff" stroke-width="1.8" stroke-linecap="round"/></svg>
                     Alerts
                     <?php if (!empty($alerts)): ?><span class="alerts-badge"><?php echo count($alerts); ?></span><?php endif; ?>
                 </h3>
@@ -152,7 +156,7 @@ $user_rol  = $_SESSION['user_rol']  ?? 'clinic';
     <div class="dashboard-card-large weather-card" style="margin-top:25px;min-height:auto;">
         <div class="card-header-custom" style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;">
             <h3 class="card-title">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="none" style="vertical-align:middle;margin-right:8px"><path d="M18 10a6 6 0 00-12 0c0 3 2 5 2 5h8s2-2 2-5z" stroke="#f5e6c8" stroke-width="1.8"/><path d="M12 2v2M4.22 4.22l1.42 1.42M20 12h2M2 12h2M19.78 4.22l-1.42 1.42" stroke="#f5e6c8" stroke-width="1.8" stroke-linecap="round"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="none" style="vertical-align:middle;margin-right:8px"><path d="M18 10a6 6 0 00-12 0c0 3 2 5 2 5h8s2-2 2-5z" stroke="#fff" stroke-width="1.8"/><path d="M12 2v2M4.22 4.22l1.42 1.42M20 12h2M2 12h2M19.78 4.22l-1.42 1.42" stroke="#fff" stroke-width="1.8" stroke-linecap="round"/></svg>
                 Weather &mdash; <span id="weatherLocation">Loading...</span>
             </h3>
             <div class="weather-search-wrap">
@@ -182,8 +186,8 @@ $user_rol  = $_SESSION['user_rol']  ?? 'clinic';
     const mainContent = document.getElementById('mainContent');
     const overlay     = document.getElementById('sidebarOverlay');
     const toggleBtn   = document.getElementById('sidebarToggleBtn');
-    const SIDEBAR_W   = 270;   // matches --sidebar-width in CSS
-    const COLLAPSED_W = 72;    // matches --sidebar-collapsed in CSS
+    const SIDEBAR_W   = 250;   // matches --sidebar-width in CSS
+    const COLLAPSED_W = 68;    // matches --sidebar-collapsed in CSS
 
     // Reposition the toggle button based on sidebar state
     function updateToggleBtn(collapsed) {

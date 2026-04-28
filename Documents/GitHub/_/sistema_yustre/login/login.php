@@ -15,7 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/login/style.css">
 </head>
 
 <body>
@@ -64,25 +64,15 @@
                             <!-- Email Input -->
                             <div class="mb-3">
                                 <label for="email" class="form-label">Email</label>
-                                <input
-                                    type="email"
-                                    class="form-control custom-input"
-                                    id="email"
-                                    name="email"
-                                    placeholder="Enter your email"
-                                    required>
+                                <input type="email" class="form-control custom-input" id="email" name="email"
+                                    placeholder="Enter your email" required>
                             </div>
 
                             <!-- Password Input -->
                             <div class="mb-4">
                                 <label for="password" class="form-label">Password</label>
-                                <input
-                                    type="password"
-                                    class="form-control custom-input"
-                                    id="password"
-                                    name="password"
-                                    placeholder="Enter your password"
-                                    required>
+                                <input type="password" class="form-control custom-input" id="password" name="password"
+                                    placeholder="Enter your password" required>
                             </div>
 
                             <!-- Terms & Conditions -->
@@ -91,7 +81,8 @@
                                     <input class="form-check-input" type="checkbox" id="termsCheck" required>
                                     <label class="form-check-label terms-label" for="termsCheck">
                                         I agree to the
-                                        <a href="#" class="terms-link" data-bs-toggle="modal" data-bs-target="#termsModal">
+                                        <a href="#" class="terms-link" data-bs-toggle="modal"
+                                            data-bs-target="#termsModal">
                                             Terms and Conditions
                                         </a>
                                     </label>
@@ -132,32 +123,43 @@
                 <div class="modal-body terms-body">
 
                     <h6>1. Acceptance of Terms</h6>
-                    <p>By accessing and using the <strong>Sistema Yustre</strong> cattle management platform, you agree to be bound by these Terms and Conditions. If you do not agree, you must not use this system.</p>
+                    <p>By accessing and using the <strong>Sistema Yustre</strong> cattle management platform, you agree
+                        to be bound by these Terms and Conditions. If you do not agree, you must not use this system.
+                    </p>
 
                     <h6>2. Authorized Use</h6>
-                    <p>This system is intended exclusively for authorized personnel of Rancho Yustre. Access credentials are personal and non-transferable. You are responsible for maintaining the confidentiality of your password and all activities that occur under your account.</p>
+                    <p>This system is intended exclusively for authorized personnel of Rancho Yustre. Access credentials
+                        are personal and non-transferable. You are responsible for maintaining the confidentiality of
+                        your password and all activities that occur under your account.</p>
 
                     <h6>3. Data Privacy</h6>
-                    <p>All information entered into this system — including animal records, medical data, and employee information — is confidential and property of Rancho Yustre. You agree not to share, copy, or distribute any data obtained through this platform without explicit authorization.</p>
+                    <p>All information entered into this system — including animal records, medical data, and employee
+                        information — is confidential and property of Rancho Yustre. You agree not to share, copy, or
+                        distribute any data obtained through this platform without explicit authorization.</p>
 
                     <h6>4. Data Accuracy</h6>
-                    <p>Users are responsible for the accuracy of the data they enter. Intentionally entering false or misleading information may result in account suspension and legal action.</p>
+                    <p>Users are responsible for the accuracy of the data they enter. Intentionally entering false or
+                        misleading information may result in account suspension and legal action.</p>
 
                     <h6>5. Security</h6>
-                    <p>You agree not to attempt to bypass, disable, or circumvent any security measures of this system. Any unauthorized access attempts will be logged and reported.</p>
+                    <p>You agree not to attempt to bypass, disable, or circumvent any security measures of this system.
+                        Any unauthorized access attempts will be logged and reported.</p>
 
                     <h6>6. System Availability</h6>
-                    <p>Rancho Yustre does not guarantee uninterrupted availability of this system. Scheduled maintenance or unforeseen technical issues may cause temporary downtime.</p>
+                    <p>Rancho Yustre does not guarantee uninterrupted availability of this system. Scheduled maintenance
+                        or unforeseen technical issues may cause temporary downtime.</p>
 
                     <h6>7. Modifications</h6>
-                    <p>Rancho Yustre reserves the right to modify these Terms and Conditions at any time. Continued use of the system after changes constitutes acceptance of the updated terms.</p>
+                    <p>Rancho Yustre reserves the right to modify these Terms and Conditions at any time. Continued use
+                        of the system after changes constitutes acceptance of the updated terms.</p>
 
                     <h6>8. Contact</h6>
                     <p>For questions regarding these terms, please contact your system administrator.</p>
 
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-success" data-bs-dismiss="modal" onclick="document.getElementById('termsCheck').checked=true">
+                    <button type="button" class="btn btn-success" data-bs-dismiss="modal"
+                        onclick="document.getElementById('termsCheck').checked=true">
                         ✅ I Accept
                     </button>
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -170,7 +172,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
     <!-- Custom JS -->
-    <script src="script.js"></script>
+    <script src="/login/script.js"></script>
 
 </body>
 
