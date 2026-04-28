@@ -3,9 +3,9 @@
 /* ── LIGHT MODE (default) ── */
 :root {
     /* Sidebar variables */
-    --sidebar-bg:           #3d1f06;
-    --sidebar-hover:        #5a2e0a;
-    --sidebar-active:       #7a3e10;
+    --sidebar-bg:           #1a2332;
+    --sidebar-hover:        #243044;
+    --sidebar-active:       #1e7e34;
     --sidebar-text:         rgba(255, 220, 160, 0.88);
     --sidebar-text-muted:   rgba(255, 200, 130, 0.55);
     --sidebar-border:       rgba(200, 132, 58, 0.22);
@@ -50,9 +50,9 @@
 html.dark,
 body.dark {
     /* Sidebar dark variables */
-    --sidebar-bg:           #1a0a02;
-    --sidebar-hover:        #2d1608;
-    --sidebar-active:       #3d2008;
+    --sidebar-bg:           #0f1923;
+    --sidebar-hover:        #1a2636;
+    --sidebar-active:       #1e7e34;
     --topbar-bg:            rgba(20, 8, 2, 0.98);
     --btn-amber:            #c8843a;
     /* Page variables */
@@ -91,21 +91,7 @@ body.dark {
 html { height: 100%; }
 
 /* Background */
-html::before {
-    content: '';
-    position: fixed;
-    top: 0; left: 0;
-    width: 100%; height: 100%;
-    background:
-        linear-gradient(155deg,
-            rgba(30, 15, 4, 0.35) 0%,
-            rgba(15, 8, 2, 0.20) 50%,
-            rgba(40, 20, 5, 0.30) 100%
-        ),
-        url('../images/background_shop.png') no-repeat center center;
-    background-size: cover;
-    z-index: -1;
-}
+html::before { display: none !important; }
 
 html.dark::before,
 body.dark::before {

@@ -29,22 +29,7 @@
 /* BACKGROUND */
 html { height: 100%; }
 
-html::before {
-    content: '';
-    position: fixed;
-    top: 0; left: 0;
-    width: 100%; height: 100%;
-    background:
-        linear-gradient(
-            160deg,
-            rgba(10, 30, 10, 0.30) 0%,
-            rgba(5, 10, 5, 0.20) 50%,
-            rgba(20, 35, 10, 0.28) 100%
-        ),
-        url('../images/logo_clinic.png') no-repeat center center;
-    background-size: cover;
-    z-index: -1;
-}
+html::before { display: none !important; }
 
 body {
     min-height: 100%;
