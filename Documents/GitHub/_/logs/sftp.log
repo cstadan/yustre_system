@@ -1,0 +1,46 @@
+Apr 23 13:47:35 10.71.60.0 a627614 Connection from 10.71.60.0 port 45876 on 66.175.237.52 port 22 rdomain ""
+Apr 23 13:47:35 10.71.60.0 a627614 Accepted password for a627614 from 10.71.60.0 port 45876 ssh2
+Apr 23 13:47:36 10.71.60.0 a627614 Starting session: subsystem 'sftp' for a627614 from 10.71.60.0 port 45876 id 0
+Apr 23 13:47:36 10.71.60.0 a627614 session opened for local user a627614 from [10.71.60.0]
+Apr 23 13:56:09 10.71.60.0 a627614 session closed for local user a627614 from [10.71.60.0]
+Apr 23 13:56:09 10.71.60.0 a627614 Connection closed by 10.71.60.0 port 45876
+Apr 23 14:18:00 10.71.60.0 a1025041 Connection from 10.71.60.0 port 24096 on 66.175.237.52 port 22 rdomain ""
+Apr 23 14:18:01 10.71.60.0 a1025041 Accepted password for a1025041 from 10.71.60.0 port 24096 ssh2
+Apr 23 14:18:01 10.71.60.0 a1025041 Starting session: subsystem 'sftp' for a1025041 from 10.71.60.0 port 24096 id 0
+Apr 23 14:18:01 10.71.60.0 a1025041 session opened for local user a1025041 from [10.71.60.0]
+Apr 23 14:28:01 10.71.60.0 a1829003 Connection from 10.71.60.0 port 57836 on 66.175.237.52 port 22 rdomain ""
+Apr 23 14:28:04 10.71.60.0 a1829003 Failed password for a1829003 from 10.71.60.0 port 57836 ssh2
+Apr 23 14:28:46 10.71.60.0 a1829003 Connection from 10.71.60.0 port 20042 on 66.175.237.52 port 22 rdomain ""
+Apr 23 14:28:48 10.71.60.0 a1829003 Failed password for a1829003 from 10.71.60.0 port 20042 ssh2
+Apr 23 14:29:14 10.71.60.0 a1829003 Connection from 10.71.60.0 port 34108 on 66.175.237.52 port 22 rdomain ""
+Apr 23 14:29:16 10.71.60.0 a1829003 Failed password for a1829003 from 10.71.60.0 port 34108 ssh2
+Apr 23 14:29:42 10.71.60.0 a1829003 Connection from 10.71.60.0 port 46584 on 66.175.237.52 port 22 rdomain ""
+Apr 23 14:29:43 10.71.60.0 a1829003 Failed password for a1829003 from 10.71.60.0 port 46584 ssh2
+Apr 23 14:29:55 10.71.60.0 a1025041 session closed for local user a1025041 from [10.71.60.0]
+Apr 23 14:29:55 10.71.60.0 a1025041 Connection closed by 10.71.60.0 port 24096
+Apr 23 14:30:30 10.71.60.0 a1829003 Connection from 10.71.60.0 port 36212 on 66.175.237.52 port 22 rdomain ""
+Apr 23 14:30:30 10.71.60.0 a1829003 Accepted password for a1829003 from 10.71.60.0 port 36212 ssh2
+Apr 23 14:30:30 10.71.60.0 a1829003 Starting session: subsystem 'sftp' for a1829003 from 10.71.60.0 port 36212 id 0
+Apr 23 14:30:30 10.71.60.0 a1829003 session opened for local user a1829003 from [10.71.60.0]
+Apr 23 14:31:32 10.71.60.0 a1829003 sent status No such file
+Apr 23 14:31:32 10.71.60.0 a1829003 Connection from 10.71.60.0 port 21530 on 66.175.237.52 port 22 rdomain ""
+Apr 23 14:31:32 10.71.60.0 a1829003 Accepted password for a1829003 from 10.71.60.0 port 21530 ssh2
+Apr 23 14:31:32 10.71.60.0 a1829003 Connection from 10.71.60.0 port 21542 on 66.175.237.52 port 22 rdomain ""
+Apr 23 14:31:32 10.71.60.0 a1829003 Accepted password for a1829003 from 10.71.60.0 port 21542 ssh2
+Apr 23 14:31:33 10.71.60.0 a1829003 Starting session: subsystem 'sftp' for a1829003 from 10.71.60.0 port 21530 id 0
+Apr 23 14:31:33 10.71.60.0 a1829003 Starting session: subsystem 'sftp' for a1829003 from 10.71.60.0 port 21542 id 0
+Apr 23 14:31:33 10.71.60.0 a1829003 session opened for local user a1829003 from [10.71.60.0]
+Apr 23 14:31:33 10.71.60.0 a1829003 session opened for local user a1829003 from [10.71.60.0]
+Apr 23 14:31:33 10.71.60.0 a1829003 open "/logs/access.log.11.gz" flags READ mode 0666
+Apr 23 14:31:33 10.71.60.0 a1829003 open "/logs/access.log.16.3.gz" flags READ mode 0666
+Apr 23 14:31:33 10.71.60.0 a1829003 close "/logs/access.log.16.3.gz" bytes read 1221 written 0
+Apr 23 14:31:33 10.71.60.0 a1829003 [10.71.60.0|get|0|1221|0|0|0|2f6c6f67732f6163636573732e6c6f672e31362e332e677a|]
+Apr 23 14:31:33 10.71.60.0 a1829003 close "/logs/access.log.11.gz" bytes read 19803 written 0
+Apr 23 14:31:33 10.71.60.0 a1829003 [10.71.60.0|get|0|19803|0|0|0|2f6c6f67732f6163636573732e6c6f672e31312e677a|]
+Apr 23 14:31:34 10.71.60.0 a1829003 open "/logs/sftp.log.12.gz" flags READ mode 0666
+Apr 23 14:31:34 10.71.60.0 a1829003 open "/logs/access.log.10.gz" flags READ mode 0666
+Apr 23 14:31:34 10.71.60.0 a1829003 close "/logs/sftp.log.12.gz" bytes read 227 written 0
+Apr 23 14:31:34 10.71.60.0 a1829003 [10.71.60.0|get|0|227|0|0|0|2f6c6f67732f736674702e6c6f672e31322e677a|]
+Apr 23 14:31:34 10.71.60.0 a1829003 close "/logs/access.log.10.gz" bytes read 50844 written 0
+Apr 23 14:31:34 10.71.60.0 a1829003 [10.71.60.0|get|0|50844|0|0|0|2f6c6f67732f6163636573732e6c6f672e31302e677a|]
+Apr 23 14:31:34 10.71.60.0 a1829003 open "/logs/sftp.log" flags READ mode 0666
