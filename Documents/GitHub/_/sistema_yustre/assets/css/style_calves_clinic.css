@@ -464,6 +464,7 @@ body.dark .modal-footer {
    SIDEBAR NAV ICONS
    ================================================ */
 .nav-icon { color: #4dd68a; }
+.nav-link.active .nav-icon { color: #ffffff; }
 .nav-link.logout .nav-icon { color: rgba(255, 255, 255, 0.65); }
 
 /* ================================================

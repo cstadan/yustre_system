@@ -71,8 +71,19 @@
                             <!-- Password Input -->
                             <div class="mb-4">
                                 <label for="password" class="form-label">Password</label>
-                                <input type="password" class="form-control custom-input" id="password" name="password"
-                                    placeholder="Enter your password" required>
+                                <div class="input-group">
+                                    <input type="password" class="form-control custom-input" id="password" name="password"
+                                        placeholder="Enter your password" required>
+                                    <button class="btn btn-outline-secondary" type="button" id="togglePassword"
+                                        title="Show/hide password"
+                                        style="border-color: var(--border-color, #ced4da); background: transparent;">
+                                        <svg id="eyeIcon" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                            fill="currentColor" viewBox="0 0 16 16">
+                                            <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"/>
+                                            <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/>
+                                        </svg>
+                                    </button>
+                                </div>
                             </div>
 
                             <!-- Terms & Conditions -->
@@ -98,7 +109,8 @@
 
                             <!-- Forgot Password Link -->
                             <div class="text-center">
-                                <a href="#" class="forgot-password" id="forgotPassword">
+                                <a href="#" class="forgot-password" data-bs-toggle="modal"
+                                    data-bs-target="#forgotPasswordModal">
                                     Forgot your password?
                                 </a>
                             </div>
@@ -163,6 +175,28 @@
                         ✅ I Accept
                     </button>
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Forgot Password Modal -->
+    <div class="modal fade" id="forgotPasswordModal" tabindex="-1" aria-labelledby="forgotPasswordModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="forgotPasswordModalLabel">Forgot your password?</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center py-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="#ffffff" viewBox="0 0 16 16" class="mb-3" style="opacity:0.85;">
+                        <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"/>
+                    </svg>
+                    <p class="mb-2" style="color:#ffffff;">Para restablecer tu contrasena, por favor <strong>comunicate con un administrador</strong>.</p>
+                    <p class="small" style="color:rgba(255,255,255,0.62);">El administrador podra cambiarla directamente desde el panel de administracion del sistema.</p>
+                </div>
+                <div class="modal-footer justify-content-center">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
                 </div>
             </div>
         </div>

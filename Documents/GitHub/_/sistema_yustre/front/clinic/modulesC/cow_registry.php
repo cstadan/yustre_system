@@ -65,7 +65,7 @@ $user_rol = $_SESSION['user_rol'] ?? 'clinic';
                 <span class="sidebar-brand-sub">Clinic Module</span>
             </div>
             <button class="sidebar-close-btn" onclick="closeSidebar()" aria-label="Close menu">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="none">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="none">
                     <path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
                 </svg>
             </button>
@@ -81,7 +81,7 @@ $user_rol = $_SESSION['user_rol'] ?? 'clinic';
                                 stroke-width="1.8" />
                         </svg></span><span class="nav-text">Dashboard</span></a></li>
             <li class="nav-item"><a href="cow_registry.php" class="nav-link active"><span class="nav-icon"><svg
-                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22" fill="none">
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="none">
                             <path d="M6 8c0 0-1 12 6 12s6-12 6-12" stroke="currentColor" stroke-width="1.8"
                                 stroke-linecap="round" />
                             <path d="M6 8c1-3 11-3 12 0" stroke="currentColor" stroke-width="1.8"
@@ -91,12 +91,12 @@ $user_rol = $_SESSION['user_rol'] ?? 'clinic';
                             <path d="M9 16h6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
                         </svg></span><span class="nav-text">Cow Registry</span></a></li>
             <li class="nav-item"><a href="medicines_colostrum.php" class="nav-link"><span class="nav-icon"><svg
-                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22" fill="none">
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="none">
                             <rect x="1" y="6" width="22" height="12" rx="6" stroke="currentColor" stroke-width="1.8" />
                             <line x1="12" y1="6" x2="12" y2="18" stroke="currentColor" stroke-width="1.8" />
                         </svg></span><span class="nav-text">Med &amp; Colostrum</span></a></li>
             <li class="nav-item"><a href="calves.php" class="nav-link"><span class="nav-icon"><svg
-                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22" fill="none">
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="none">
                             <ellipse cx="12" cy="14" rx="6" ry="5" stroke="currentColor" stroke-width="1.8" />
                             <path d="M8 14c0-4 8-4 8 0" stroke="currentColor" stroke-width="1.8"
                                 stroke-linecap="round" />
@@ -116,7 +116,7 @@ $user_rol = $_SESSION['user_rol'] ?? 'clinic';
             <?php endif; ?>
             <li class="nav-item <?php echo $_SESSION['user_rol'] !== 'admin' ? 'bottom' : ''; ?>">
                 <a href="../../../logout.php" class="nav-link logout"><span class="nav-icon"><svg
-                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22" fill="none">
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="none">
                             <path d="M14 3H6C5.448 3 5 3.448 5 4V20C5 20.552 5.448 21 6 21H14" stroke="currentColor"
                                 stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
                             <path d="M16 8L21 12L16 16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"

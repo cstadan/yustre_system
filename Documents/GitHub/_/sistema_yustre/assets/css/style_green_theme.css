@@ -213,6 +213,7 @@ body {
     background: var(--sidebar-active);
     color: #fff;
 }
+.nav-link.active .nav-icon { color: #ffffff; }
 
 .nav-icon {
     min-width: 32px;

@@ -28,18 +28,37 @@ const WMO_CODES = {
 
 let savedLocation = JSON.parse(localStorage.getItem('weatherLocation') || 'null');
 
+function normalize(s) {
+    return (s || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+}
+
 async function searchCity() {
     const query = document.getElementById('cityInput').value.trim();
     if (!query) return;
-    const res  = await fetch(`https://geocoding-api.open-meteo.com/v1/search?name=${encodeURIComponent(query)}&count=5&language=en`);
+
+    // First token = city name sent to API; remaining tokens = client-side filter
+    const tokens     = query.split(/[\s,]+/).filter(Boolean);
+    const cityQuery  = tokens[0];
+    const hintTokens = tokens.slice(1).map(normalize);
+
+    const res  = await fetch(`https://geocoding-api.open-meteo.com/v1/search?name=${encodeURIComponent(cityQuery)}&count=20&language=es`);
     const data = await res.json();
-    const box  = document.getElementById('cityResults');
-    if (!data.results || data.results.length === 0) {
+    let results = data.results || [];
+
+    if (hintTokens.length > 0) {
+        results = results.filter(r => {
+            const fields = normalize([r.name, r.admin1, r.admin2, r.country].filter(Boolean).join(' '));
+            return hintTokens.some(h => fields.includes(h));
+        });
+    }
+
+    const box = document.getElementById('cityResults');
+    if (results.length === 0) {
         box.innerHTML = '<div class="city-result-item">No results found</div>';
         box.style.display = 'block';
         return;
     }
-    box.innerHTML = data.results.map(r =>
+    box.innerHTML = results.slice(0, 5).map(r =>
         `<div class="city-result-item" onclick="selectCity(${r.latitude}, ${r.longitude}, '${r.name}', '${r.country || ''}')">
             📍 ${r.name}${r.admin1 ? ', ' + r.admin1 : ''}, ${r.country || ''}
         </div>`
@@ -113,9 +132,17 @@ async function loadWeather(lat, lon, name, country) {
 // INIT on DOM ready
 // ------------------------------------------------
 document.addEventListener('DOMContentLoaded', () => {
-    // Enter key support
-    document.getElementById('cityInput').addEventListener('keydown', e => {
-        if (e.key === 'Enter') searchCity();
+    let debounceTimer;
+    const cityInput = document.getElementById('cityInput');
+
+    cityInput.addEventListener('input', () => {
+        clearTimeout(debounceTimer);
+        const query = cityInput.value.trim();
+        if (!query) {
+            document.getElementById('cityResults').style.display = 'none';
+            return;
+        }
+        debounceTimer = setTimeout(searchCity, 350);
     });
 
     // Load saved city or default (Tampico)
