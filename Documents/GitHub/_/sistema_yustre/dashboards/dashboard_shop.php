@@ -277,8 +277,8 @@ $user_rol = $_SESSION['user_rol'] ?? 'shop';
         const mainContent = document.getElementById('mainContent');
         const overlay = document.getElementById('sidebarOverlay');
         const toggleBtn = document.getElementById('sidebarToggleBtn');
-        const SIDEBAR_W = 270;   // matches --sidebar-width in CSS
-        const COLLAPSED_W = 72;    // matches --sidebar-collapsed in CSS
+        const SIDEBAR_W = 250;   // matches --sidebar-width in CSS
+        const COLLAPSED_W = 68;    // matches --sidebar-collapsed in CSS
 
         // Reposition the toggle button based on sidebar state
         function updateToggleBtn(collapsed) {

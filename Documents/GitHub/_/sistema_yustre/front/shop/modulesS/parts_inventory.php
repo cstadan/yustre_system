@@ -430,7 +430,7 @@
 <script>
 
         const sidebar=document.getElementById('sidebar'),mainContent=document.getElementById('mainContent'),overlay=document.getElementById('sidebarOverlay'),toggleBtn=document.getElementById('sidebarToggleBtn');
-        const SIDEBAR_W=270,COLLAPSED_W=72;
+        const SIDEBAR_W=250,COLLAPSED_W=68;
         function updateToggleBtn(c){if(window.innerWidth>768){toggleBtn.style.left=(c?COLLAPSED_W:SIDEBAR_W)-14+'px';toggleBtn.style.transform=c?'rotate(180deg)':'rotate(0deg)';}}
         const isCollapsed=localStorage.getItem('sidebarCollapsed')==='true';
         if(isCollapsed){sidebar.classList.add('collapsed');mainContent.classList.add('collapsed');}
